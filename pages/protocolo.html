@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Denuncia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Fim da Picada</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./denuncia.html">Denúncia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="signup-page">
+      <form>
+        <h3>Busque sua denúncia aki</h3>
+        <label for="protocolo">Protocolo</label>
+          <input
+            type="text"
+            id="protocolo"
+            name="protocolo"
+            class="form-control"
+            placeholder="Informe o seu protocolo"
+            value=""
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            maxlength="8"
+          />
+        <button type="button" class="btn btn-success" id="tbn_buscar">Buscar</button>
+        <div class="form-group">
+          <label for="cep">Cep</label>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            class="form-control"
+            placeholder="Informe o cep"
+            value=""
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            maxlength="8"
+            disabled="true"
+          />
+          <!-- <input
+            type="text"
+            class="form-control"
+            placeholder="Full Name"
+            name="cep"
+            required
+          /> -->
+        </div>
+        <div class="form-group">
+          <label for="email">Estado<span class="required-field">*</span></label>
+          <input
+            id="estado"
+            type="text"
+            class="form-control"
+            placeholder="Enter estado"
+            name="estado"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cidade"
+            >Cidade<span class="required-field">*</span></label
+          >
+          <input
+            id="cidade"
+            type="text"
+            class="form-control"
+            placeholder="Enter cidade"
+            name="cidade"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="bairro"
+            >Bairro<span class="required-field">*</span></label
+          >
+          <input
+            id="bairro"
+            type="text"
+            class="form-control"
+            placeholder="bairro"
+            name="bairro"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="rua">Rua<span class="required-field">*</span></label>
+          <input
+            id="rua"
+            type="text"
+            class="form-control"
+            placeholder="rua"
+            name="rua"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="numero"
+            >Numero<span class="required-field">*</span></label
+          >
+          <input
+            id="numero"
+            type="text"
+            class="form-control"
+            placeholder="numero"
+            name="numero"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="complemento"
+            >Complemento<span class="required-field">*</span></label
+          >
+          <input
+            id="complemento"
+            type="text"
+            class="form-control"
+            placeholder="complemento"
+            name="complemento"
+            required
+            disabled="true"
+          />
+        </div>
+        <div class="form-group purple-border">
+          <label for="descricao">Descrição</label>
+          <textarea class="form-control" id="descricao" rows="3" disabled="true"></textarea>
+        </div>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8= sha256-T+aPohYXbm0fRYDpJLr+zJ9RmYTswGsahAoIsNiMld4=" 
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jQuery/protocolo.js"></script>
+  </body>
+</html>
