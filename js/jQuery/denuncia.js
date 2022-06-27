@@ -1,4 +1,4 @@
-const url = "http://localhost:3000";
+const url = "https://api-fimdapicada.herokuapp.com";
 
 $(document).ready(function(){
     $("#tbn_denunciar").click(function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
             },
             success:function(message){
                 if(message.id > -1){
-                    alert("Seu endereço é " + message.id);
+                    //alert("Seu endereço é " + message.id);
                     cadastrarDenuncia(message.id);
                 }else{
                     cadastrarEndereco();
@@ -47,7 +47,7 @@ $(document).ready(function(){
                 numero: $("#numero").val()
             },
             success:function(message){
-                alert("Novo endereço cadastrado: \n" + message.id);
+                //alert("Novo endereço cadastrado: \n" + message.id);
                 cadastrarDenuncia(message.id);
             },error:function(message){
                 alert("Cadastro falhou falhou");
@@ -69,7 +69,7 @@ $(document).ready(function(){
             success:function(message){
                 $(".numero-protocolo").text(protocolo_Num);
                 $(".popup-wrapper").css("display" , "block");
-                alert("Denúncia realizada com sucesso \nSeu protocolo é: " + protocolo_Num);
+               //alert("Denúncia realizada com sucesso \nSeu protocolo é: " + protocolo_Num);
             },error:function(message){
                 alert("Cadastro falhou falhou");
             }
