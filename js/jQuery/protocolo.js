@@ -1,4 +1,4 @@
-const url = "https://api-fimdapicada.herokuapp.com";
+const url = "http://localhost:3000";
 
 $(document).ready(function(){
     $("#tbn_buscar").click(function(){
@@ -7,7 +7,7 @@ $(document).ready(function(){
     function procurarProtocolo(){
         $.ajax({
             type:"GET",
-            url: url + "/denuncia/" + $("#protocolo").val(),
+            url: "http://localhost:3000/denuncia/" + $("#protocolo").val(),
             success:function(data){
                 $("#cep").val(data.cep);
                 $("#estado").val(data.estado);
@@ -17,6 +17,7 @@ $(document).ready(function(){
                 $("#numero").val(data.numero);
                 $("#complemento").val(data.completamento);
                 $("#descricao").val(data.descricao);
+                $("#status").val(data.denuncia_status);
             },error:function(message){
                 alert("Falha")
             }

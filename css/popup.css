@@ -1,4 +1,4 @@
-.popup-wrapper{
+.popup-wrapper {
     display: none;
     background: rgba(0, 0, 0, .5);
     position: fixed;
@@ -7,8 +7,9 @@
     width: 100%;
     height: 100%;
 }
-.popup{
-    font-family: Arial;
+
+.popup {
+    font-family: comic sans ms;
     text-align: center;
     width: 100%;
     max-width: 300px;
@@ -17,15 +18,17 @@
     background: white;
     position: relative;
 }
-.popup .copy-link{
+
+.popup .copy-link {
     color: white;
     cursor: pointer;
     padding: 6px 10px;
     text-decoration: none;
-    background: crimson;
+    background: #03A9F4;
 }
-.popup-close{
-    position: absolute;
+
+.popup-close {
+    position: center;
     top: 5px;
     right: 10px;
     cursor: pointer;
