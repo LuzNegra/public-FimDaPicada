@@ -7,7 +7,7 @@ $(document).ready(function(){
     function procurarProtocolo(){
         $.ajax({
             type:"GET",
-            url: uel + "/denuncia/" + $("#protocolo").val(),
+            url: url + "/denuncia/" + $("#protocolo").val(),
             success:function(data){
                 $("#cep").val(data.cep);
                 $("#estado").val(data.estado);
