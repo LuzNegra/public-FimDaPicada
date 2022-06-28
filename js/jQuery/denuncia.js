@@ -1,4 +1,4 @@
-const url = "http://localhost:3000";
+const url = "https://api-fimdapicada.herokuapp.com";
 
 $(document).ready(function(){
     $("#tbn_denunciar").click(function(){

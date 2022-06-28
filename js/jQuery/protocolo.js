@@ -1,4 +1,4 @@
-const url = "http://localhost:3000";
+const url = "https://api-fimdapicada.herokuapp.com";
 
 $(document).ready(function(){
     $("#tbn_buscar").click(function(){
@@ -7,7 +7,7 @@ $(document).ready(function(){
     function procurarProtocolo(){
         $.ajax({
             type:"GET",
-            url: "http://localhost:3000/denuncia/" + $("#protocolo").val(),
+            url: uel + "/denuncia/" + $("#protocolo").val(),
             success:function(data){
                 $("#cep").val(data.cep);
                 $("#estado").val(data.estado);
